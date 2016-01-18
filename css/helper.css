@@ -5,3 +5,23 @@
 	font-size : 40px;
 	text-align:center;
 }
+
+ol{
+
+	
+	font-size : 1.5em;
+
+
+}
+
+a{
+	color : black;
+}
+button{
+	margin : 0 auto;
+
+}
+.goback{
+
+	text-align : center;
+}

@@ -3,7 +3,9 @@ $(document).ready(function()
 		var i = 0;
 		var flag = [false,false,false,false,false,false,false,false,false,false,false,false];
 		
-			$('.submitbutton').click(function(){
+			
+				$('.submitbutton').click(function(){
+		
 					var text1 = $('input[type="text"]').val();
 
 
@@ -82,6 +84,7 @@ $(document).ready(function()
 				{
 					$('input[placeholder]').append('All post its are filled.Press rest button');
 				}
+			
 				$('input[type="text"]').val('');
 			
 
