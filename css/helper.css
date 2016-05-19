@@ -20,8 +20,12 @@ a{
 button{
 	margin : 0 auto;
 	display : block;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3f90fc760a9dd8ddeb4a3727dadee330fa86cde2
 }
 .goback{
-
+	
 	text-align : center;
 }
