@@ -37,28 +37,28 @@
 
 <!--Header
 ------------------------------------------------------>
-<header><img src="images/icon38.png"> POST IT! <a href='help.html'><p class="help">Help</p></a></header>
+<header> POST IT! <a href='help.html'><p class="help">Help</p></a></header>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container fullbody">
      <div class="row boxes">
-      <div class="three columns inners red" id="red1"></div>
-      <div class="three columns inners yellow" id="yellow1"></div>
-      <div class="three columns inners green" id="green1" ></div> 
-      <div class="three columns inners violet" id="violet1" ></div>
+      <div class="three columns inners red" id="red1" > </div>
+      <div class="three columns inners yellow" id="yellow1"   > </div>
+      <div class="three columns inners green" id="green1" > </div> 
+      <div class="three columns inners violet" id="violet1" > </div>
     </div>
     <div class="row boxes">
-      <div class="three columns inners blue" id="blue1" ></div>
-      <div class="three columns inners pink" id="pink1"></div>
-      <div class="three columns inners orange" id="orange1"></div>
-      <div class="three columns inners yellow" id="yellow2"></div>
+      <div class="three columns inners blue" id="blue1" > </div>
+      <div class="three columns inners pink" id="pink1"  > </div>
+      <div class="three columns inners orange" id="orange1"  > </div>
+      <div class="three columns inners yellow" id="yellow2" > </div>
     </div>
     <div class="row boxes">
-      <div class="three columns inners violet" id="violet2"></div>
-      <div class="three columns inners brown" id="brown1"></div>
-      <div class="three columns inners green" id="green2"></div>
-      <div class="three columns inners red" id="red2"></div>
+      <div class="three columns inners violet" id="violet2"  > </div>
+      <div class="three columns inners brown" id="brown1"  > </div>
+      <div class="three columns inners green" id="green2"  > </div>
+      <div class="three columns inners red" id="red2" > </div>
 
     </div>
 

@@ -2,9 +2,10 @@ $(document).ready(function()
 	{
 		var i = 0;
 		var flag = [false,false,false,false,false,false,false,false,false,false,false,false];
-		
-			
-				$('.submitbutton').click(function(){
+		var count = 0;
+        var finishedcount = 0;
+        var c = 0;
+    $('.submitbutton').click(function(){
 		
 					var text1 = $('input[type="text"]').val();
                                      if(text1==""){
@@ -14,11 +15,11 @@ $(document).ready(function()
                                     post(text1);
                                      }
 
-                     });
+                    		 });
 
-            
+         
              
-                   $(document).keypress(function(event){
+    $(document).keypress(function(event){
             
                             if(event.which==13){
                                     var text1 = $('input[type="text"]').val();
@@ -31,7 +32,8 @@ $(document).ready(function()
                               }
                     });
 
-				var post = function(text1){	
+
+		var post = function(text1){	
                     if(flag[0] === false)
 					{
 					$('#red1').append("<p class='paragraph'>"+text1+"</p>");
@@ -106,20 +108,46 @@ $(document).ready(function()
 				else
 				{
 					$('input[placeholder]').append('All post its are filled.Press rest button');
+                    $('input[type="text"]').val('');
+                    return;
 				}
-			
+			     count += 1;
 				$('input[type="text"]').val('');
 			
         }
 		  
-
-
 				$('.inners').click(function(){
-
-                    
+                    if(!$.trim($(this).html()))
+                       {
+                        
+                        alert("Please enter a task first. Then click on the post after finishing it");
+                           return;
+                    }
+                    else{
+                
 					$(this).hide();
-				
+                        finishedcount += 1;
+                        c += 1;
+                        if(finishedcount == count)
+                        {    alert("Hip Hip Hooray!! You\'ve finished all your tasks succesfully!!");
+                        count = 0;
+                        finishedcount = 0;
+                         if(c ==12)
+                             {
+                                alert("Excellent Job! You've worked very hard. Now, go take some rest");
+                                $('.inners').show();
+                                 $('.paragraph').remove();
+                                for(i=0;i<12;i++)
+					               {
+						          flag[i] = false;
 
+					           }
+                                 
+                                 
+                             }
+                        }
+                    }
+                    
 
 				});
 
@@ -137,6 +165,6 @@ $(document).ready(function()
 			});
 
 
-
+ 
 
 });

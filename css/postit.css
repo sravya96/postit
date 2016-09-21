@@ -10,6 +10,7 @@ body{
 
 }
 header{
+    padding-top : 5px;
 	font-family: 'Satisfy', cursive;
 	background-color : white;
 	font-size : 30px;

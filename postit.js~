@@ -7,9 +7,33 @@ $(document).ready(function()
 				$('.submitbutton').click(function(){
 		
 					var text1 = $('input[type="text"]').val();
+                                     if(text1==""){
+                                            alert("Please enter text");
+                                    }
+                                    else{
+                                    post(text1);
+                                     }
+
+                    		 });
+
+         
+             
+                   $(document).keypress(function(event){
+            
+                            if(event.which==13){
+                                    var text1 = $('input[type="text"]').val();
+                                    if(text1==""){
+                                            alert("Please enter text");
+                                    }
+                                    else{
+                                    post(text1);
+                                     }
+                              }
+                    });
 
 
-					if(flag[0] === false)
+		var post = function(text1){	
+                    if(flag[0] === false)
 					{
 					$('#red1').append("<p class='paragraph'>"+text1+"</p>");
 					flag[0] = true;
@@ -87,14 +111,29 @@ $(document).ready(function()
 			
 				$('input[type="text"]').val('');
 			
-
-		});
+        }
+		  
 
 
 				$('.inners').click(function(){
 
+                    
 					$(this).hide();
 				
+
+
+				});
+		  
+
+
+				$('.inners').click(function(){
+
+                    			if(this.is(':empty'){
+						alert("Please click on a note only when you've completed the task written on it");
+					}
+					else{
+					$(this).hide();
+					}
 
 
 				});
