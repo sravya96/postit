@@ -7,13 +7,13 @@ $(document).ready(function()
         var c = 0;
     $('.submitbutton').click(function(){
 		
-					var text1 = $('input[type="text"]').val();
-                                     if(text1==""){
-                                            alert("Please enter text");
+			var text1 = $('input[type="text"]').val();
+                        if(text1==""){
+                                  alert("Please enter text");
+                                  }
+                                   else{
+                                   post(text1);
                                     }
-                                    else{
-                                    post(text1);
-                                     }
 
                     		 });
 
